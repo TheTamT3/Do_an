@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="tittle"><h1>PROCESSING IMAGE HANDWRINGTING</h1></div>
+
+    <div class="container">
+      <div class="select">
+        <input type="file" accept="image/*" id="file" multiple />
+      </div>
+      <div class="process">
+        <input type="button" value="CONVERT" id="btn" onclick="upload()" />
+      </div>
+      <img id="preview" />
+    </div>
+
+    <script>
+      var x;
+      function upload() {
+        var file = document.getElementById("file").files;
+        if (file.length > 0) {
+          var fileReader = new FileReader();
+          fileReader.onload = function (event) {
+            document
+              .getElementById("preview")
+              .setAttribute("src", event.target.result);
+          };
+        }
+        fileReader.readAsDataURL(file[0]);
+        x = file[0].name;
+        return x;
+      }
+      console.log((x = upload()));
+    </script>
+  </body>
+</html>

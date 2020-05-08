@@ -1,0 +1,48 @@
+.tittle {
+    text-align: center;
+    color: white;
+    background: rgb(33, 31, 31);
+    background: linear-gradient(0deg, rgba(33, 31, 31, 1) 0%, rgba(96, 240, 5, 1) 100%);
+}
+img {
+    max-width: 180px;
+}
+input[type="file"] {
+    padding: 10px;
+    background: #2d2d2d;
+}
+.cut {
+    height: 100%;
+}
+.cut #img-1 {
+    width: 100%;
+
+    background-color: yellow;
+}
+.cut .img-2 {
+    width: 100%;
+    height: 100%;
+    background-color: blue;
+}
+.cut .img-3 {
+    width: 100%;
+    height: 100%;
+    background-color: green;
+}
+.panel {
+    background-image: image();
+}
+body {
+    background-image: url(background.jpg);
+}
+.select {
+}
+.process {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.container {
+    background-color: rgb(45, 196, 70);
+    width: 295px;
+    height: 300px;
+}
